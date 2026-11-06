@@ -1,0 +1,50 @@
+# Data
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/panel.parquet
+!data/processed/prices_clean.parquet
+!data/processed/macro_clean.parquet
+!data/processed/sentiment_daily.parquet
+!data/processed/recommendations.parquet
+!data/processed/recommendation_history.parquet
+!data/raw/news_scored.parquet
+
+# Keep the small trained artifacts so the dashboard runs from a clone
+models/checkpoints/
+models/*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Env
+.env
+.env.*
+!/.env.example
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Report build intermediates
+reports/*.aux
+reports/*.log
+
+# Local run logs
+logs/
+
+# Archived pre-extension artifacts
+archive/

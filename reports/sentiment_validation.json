@@ -1,0 +1,59 @@
+{
+  "status": "ok",
+  "rows": 200,
+  "flagged_unsure": 1,
+  "finbert": {
+    "accuracy": 0.67,
+    "accuracy_ci": [
+      0.605,
+      0.735
+    ],
+    "macro_f1": 0.6466314200304348,
+    "confusion": {
+      "negative": {
+        "negative": 27,
+        "neutral": 3,
+        "positive": 10
+      },
+      "neutral": {
+        "negative": 12,
+        "neutral": 74,
+        "positive": 28
+      },
+      "positive": {
+        "negative": 8,
+        "neutral": 5,
+        "positive": 33
+      }
+    }
+  },
+  "vader": {
+    "accuracy": 0.445,
+    "accuracy_ci": [
+      0.375,
+      0.515
+    ],
+    "macro_f1": 0.43472052223582214,
+    "confusion": {
+      "negative": {
+        "negative": 15,
+        "neutral": 6,
+        "positive": 8
+      },
+      "neutral": {
+        "negative": 17,
+        "neutral": 42,
+        "positive": 31
+      },
+      "positive": {
+        "negative": 15,
+        "neutral": 34,
+        "positive": 32
+      }
+    }
+  },
+  "finbert_minus_vader_ci": [
+    0.139875,
+    0.31
+  ]
+}

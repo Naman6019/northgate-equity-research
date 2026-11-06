@@ -1,0 +1,115 @@
+project:
+  name: northgate-quant
+  seed: 42
+
+universe:
+  equities: [AAPL, MSFT, NVDA, JPM, XOM, JNJ, PG, KO, CAT, HD]
+  benchmark: "^GSPC"
+  benchmark_total_return: SPY
+  volatility: "^VIX"
+  context_etfs: [XLK, XLF, XLE, XLV, XLP, XLI, XLY]
+  sector_map:
+    AAPL: XLK
+    MSFT: XLK
+    NVDA: XLK
+    JPM: XLF
+    XOM: XLE
+    JNJ: XLV
+    PG: XLP
+    KO: XLP
+    CAT: XLI
+    HD: XLY
+
+dates:
+  start: "2009-01-01"
+  end: "2023-12-29"
+
+split:
+  train: 0.70
+  val: 0.15
+  test: 0.15
+
+horizons: [1, 5]
+sequence_length: 60
+
+cleaning:
+  ffill_limit: 3
+  outlier_z: 5.0
+  outlier_z_window: 63
+  iqr_multiplier: 1.5
+  macro_lags_days:
+    CPIAUCSL: 45
+    UNRATE: 35
+    DGS10: 1
+    DGS3MO: 1
+
+news:
+  provider: FNSPID
+  url: "https://huggingface.co/datasets/Zihan1004/FNSPID/resolve/main/Stock_news/All_external.csv"
+  # Date-only timestamps are treated as after-close (conservative).
+  market_close_hour: 16
+  timezone: "America/New_York"
+  finbert_model: "ProsusAI/finbert"
+  batch_size: 64
+  cache_dir: "data/raw/news_cache"
+
+ml:
+  cv_splits: 5
+  n_trials: 24
+  ridge_alphas: [0.01, 0.1, 1.0, 10.0, 100.0]
+  rf_grid:
+    n_estimators: [200, 400]
+    max_depth: [6, 10, 16, null]
+    min_samples_leaf: [5, 20, 50]
+  xgb_grid:
+    n_estimators: [200, 400]
+    max_depth: [3, 4, 6]
+    learning_rate: [0.02, 0.05, 0.1]
+    subsample: [0.7, 0.9]
+    colsample_bytree: [0.7, 0.9]
+  svr_grid:
+    C: [0.1, 1.0, 10.0]
+    epsilon: [0.001, 0.01]
+    gamma: ["scale", 0.01, 0.1]
+
+dl:
+  hidden_size: 64
+  dropout: 0.2
+  learning_rate: 0.001
+  batch_size: 64
+  max_epochs: 120
+  patience: 12
+  lengths: [20, 60]
+  hidden_multipliers: [0.5, 1.0]
+  dropouts: [0.1, 0.3]
+
+sentiment:
+  validation_sample: 200
+
+portfolio:
+  covariance_lookback: 252
+  per_asset_cap: 0.30
+  risk_free_default: 0.04
+  cost_bps: 10
+  rebalance_days: 5
+  mc_samples: 20000
+  mu_lambdas: [0.0, 0.25, 0.5, 0.75, 1.0]
+  frontier_points: 40
+  bootstrap_resamples: 5000
+  bootstrap_block: 20
+
+recommend:
+  weights:
+    forecast: 0.5
+    sentiment: 0.2
+    risk: 0.3
+  high: 0.5
+  low: -0.5
+  rebalance_band: 0.05
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  models: models
+  reports: reports
+  figures: reports/figures

@@ -1,0 +1,277 @@
+{
+  "prices": {
+    "AAPL": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 183,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "CAT": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 230,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "HD": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 189,
+      "large_moves_kept": 1,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "JNJ": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 189,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "JPM": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 259,
+      "large_moves_kept": 4,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "KO": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 199,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "MSFT": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 196,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "NVDA": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 198,
+      "large_moves_kept": 4,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "PG": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 201,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "SPY": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 281,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XLE": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 219,
+      "large_moves_kept": 1,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XLF": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 241,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XLI": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 221,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XLK": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 255,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XLP": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 174,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XLV": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 169,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XLY": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 240,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "XOM": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 224,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "^GSPC": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 286,
+      "large_moves_kept": 0,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    },
+    "^VIX": {
+      "raw_rows": 3774,
+      "calendar_rows": 3774,
+      "clean_rows": 3774,
+      "gaps_filled": 0,
+      "invariant_violations": 0,
+      "outliers_flagged": 183,
+      "large_moves_kept": 84,
+      "winsorised": 0,
+      "first_date": "2009-01-02",
+      "last_date": "2023-12-29"
+    }
+  },
+  "macro": {
+    "DGS10": {
+      "lag_days": 1,
+      "lag_type": "business_day",
+      "observations": 3752,
+      "first_reference_date": "2009-01-02",
+      "last_reference_date": "2023-12-29"
+    },
+    "DGS3MO": {
+      "lag_days": 1,
+      "lag_type": "business_day",
+      "observations": 3752,
+      "first_reference_date": "2009-01-02",
+      "last_reference_date": "2023-12-29"
+    },
+    "CPIAUCSL": {
+      "lag_days": 45,
+      "lag_type": "calendar_day",
+      "observations": 180,
+      "first_reference_date": "2009-01-01",
+      "last_reference_date": "2023-12-01"
+    },
+    "UNRATE": {
+      "lag_days": 35,
+      "lag_type": "calendar_day",
+      "observations": 180,
+      "first_reference_date": "2009-01-01",
+      "last_reference_date": "2023-12-01"
+    }
+  },
+  "price_rows": 75480,
+  "macro_rows": 3774,
+  "news_rows": 65785
+}

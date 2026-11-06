@@ -1,0 +1,23 @@
+{
+  "weights": {
+    "forecast": 0.4,
+    "sentiment": 0.2,
+    "risk": 0.4
+  },
+  "validation": {
+    "buy_hit_rate": 0.5606276747503567,
+    "sell_hit_rate": 0.5196581196581197,
+    "overall_hit_rate": 0.5419906687402799,
+    "n_buy": 701,
+    "n_sell": 585,
+    "always_buy_hit_rate": 0.4974609375
+  },
+  "test": {
+    "buy_hit_rate": 0.5638297872340425,
+    "sell_hit_rate": 0.5142314990512334,
+    "overall_hit_rate": 0.53987167736022,
+    "n_buy": 564,
+    "n_sell": 527,
+    "always_buy_hit_rate": 0.5142023346303501
+  }
+}

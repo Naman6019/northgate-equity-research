@@ -1,0 +1,7 @@
+{
+  "model": "Transformer",
+  "family": "dl",
+  "val_mae": 0.030244198601491235,
+  "horizon": 5,
+  "predictions_file": "best_forecast_h5.parquet"
+}
